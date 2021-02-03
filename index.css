@@ -1,0 +1,116 @@
+/* 清样式，如果是项目中，不推荐使用通配符来清样式，建议使用标签清样式，通配符清样式会增加页面压力 
+margin 简写属性在一个声明中设置所有外边距属性
+padding 简写属性在一个声明中设置所有内边距属性。
+4个 上右下左
+3个 上右下
+2个 上右
+1个 所有*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.table {
+    width: 100%;
+    height: 100%;
+    /* margin: 0 auto; */
+}
+
+/* input隐藏
+display 属性规定元素应该生成的框的类型。 
+值	                描述
+none	            此元素不会被显示。
+block	            此元素将显示为块级元素，此元素前后会带有换行符。
+inline	            默认。此元素会被显示为内联元素，元素前后没有换行符。
+inline-block	    行内块元素。（CSS2.1 新增的值）
+list-item	        此元素会作为列表显示。
+run-in	            此元素会根据上下文作为块级元素或内联元素显示。
+compact	CSS 中有值 compact，不过由于缺乏广泛支持，已经从 CSS2.1 中删除。
+marker	CSS 中有值 marker，不过由于缺乏广泛支持，已经从 CSS2.1 中删除。
+table	            此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。
+inline-table	    此元素会作为内联表格来显示（类似 <table>），表格前后没有换行符。
+table-row-group	    此元素会作为一个或多个行的分组来显示（类似 <tbody>）。
+table-header-group	此元素会作为一个或多个行的分组来显示（类似 <thead>）。
+table-footer-group	此元素会作为一个或多个行的分组来显示（类似 <tfoot>）。
+table-row	        此元素会作为一个表格行显示（类似 <tr>）。
+table-column-group	此元素会作为一个或多个列的分组来显示（类似 <colgroup>）。
+table-column	    此元素会作为一个单元格列显示（类似 <col>）
+table-cell	        此元素会作为一个表格单元格显示（类似 <td> 和 <th>）
+table-caption	    此元素会作为一个表格标题显示（类似 <caption>）
+inherit	            规定应该从父元素继承 display 属性的值。*/
+input.table {
+    display: none;
+}
+
+/* 将ul相对定位，目的是让内容的div绝对定位时相对ul定位，否则会相对body定位 */
+/* ul弹性盒，目的是让li横着排，也可以将li浮动或者转行内块 
+position 属性规定元素的定位类型。
+
+值	        描述
+absolute	生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+
+fixed	    生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+
+relative	生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
+
+static	    默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
+
+inherit	    规定应该从父元素继承 position 属性的值。*/
+ul.table {
+    position: relative;
+    display: flex;
+}
+
+/* 设置input的下一个节点label的样式 
+text-align 属性规定元素中的文本的水平对齐方式。
+值	    描述
+left	把文本排列到左边。默认值：由浏览器决定。
+right	把文本排列到右边。
+center	把文本排列到中间。
+justify	实现两端对齐文本效果。
+inherit	规定应该从父元素继承 text-align 属性的值。
+
+line-height 属性设置行间的距离（行高）。
+值	    描述
+normal	默认。设置合理的行间距。
+number	设置数字，此数字会与当前的字体尺寸相乘来设置行间距。
+length	设置固定的行间距。
+%	    基于当前字体尺寸的百分比行间距。
+inherit	规定应该从父元素继承 line-height 属性的值。*/
+li+label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    /* font-size: 36px; */
+    text-align: center;
+    /* line-height: 60px; */
+    color: #31363a;
+}
+
+/*消除列表圆点
+list-style 简写属性在一个声明中设置所有的列表属性。*/
+li.table {
+    flex: 1;
+    height: 60px;
+    list-style: none;
+}
+
+/* 设置div内容的基础样式 隐藏内容div*/
+input+div {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+
+/* input选中状态时候对应的label的样式 */
+label+input:checked {
+    background: #1C89CC;
+    color: #fff;
+}
+
+/* input选中时候显示对应的div */
+label+input:checked+div {
+    display: block;
+}
