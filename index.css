@@ -153,9 +153,8 @@ li.list{
 
 
 input.code{
-    border-bottom:medium ridge #176ea5;
-    background: #1C89CC;
-    color: #fff;
+    border-bottom:medium none #176ea5;
+    background:none;
     padding: 0px 0px 0px 4px;
 }
 
@@ -172,5 +171,10 @@ table{
 
 .row{
     display: inline-block;
+}
+
+
+.result{
+
 }
 
