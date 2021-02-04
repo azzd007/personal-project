@@ -61,6 +61,10 @@ ul.table {
     display: flex;
 }
 
+li.table{
+    font-size: 0px;
+}
+
 /* 设置input的下一个节点label的样式 
 text-align 属性规定元素中的文本的水平对齐方式。
 值	    描述
@@ -78,7 +82,7 @@ length	设置固定的行间距。
 %	    基于当前字体尺寸的百分比行间距。
 inherit	规定应该从父元素继承 line-height 属性的值。*/
 input+label {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 100%;
     background: #ccc;
