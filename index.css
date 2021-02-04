@@ -114,6 +114,7 @@ input:checked+label {
     color: #fff;
 }
 
+
 /* input选中时候显示对应的div */
 input:checked+label+div {
     display: block;
@@ -132,17 +133,20 @@ header{
     color: #fff;
 }
 
-div.list{
-    padding: 12px 16px 30px 12px;
-}
 
-li.list{
+div.list{
     font-size: 16px;
     padding: 12px 16px 30px 12px;
 }
+
 
 li.list>p:first-child{
     font-weight: bold;
     font-size: 16px;
     }
 
+
+
+.row{
+    display: inline-block;
+}
