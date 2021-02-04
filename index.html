@@ -23,13 +23,13 @@
                             <!-- checked属性用来表示预先选定复选框或单选按钮 -->
                         </li>
                         <li class="list 4.0">
-                            <p id="init_success" tabindex="1" accesskey="0">0. 客户端初始化调用--V4.0 新增</p>
-                            <!-- accesskey属性用来规定元素的快捷键，调方式为alt+设定快捷键 -->
-                            <!-- <p id="init_success" tabindex="1"></p> -->
+                            <!-- <p id="init_success" tabindex="1" accesskey="0">0. 客户端初始化调用--V4.0 新增</p>
+                            accesskey属性用来规定元素的快捷键，调方式为alt+设定快捷键 -->
+                            <p id="init_success" tabindex="1"></p>
                         </li>
                         <li class="list">
                             <p class="row">11.native-手机振动</p>
-                            <input class="row code" id="playSound" type="button" value="按钮" value=&#927>
+                            <input class="row code" id="playSound" type="button" value="按钮">
                             <p id="playSound_success"></p>
                             <!-- <input class="row code" id="playSound">手机振动</p> -->
                         </li>
@@ -80,6 +80,7 @@
                         </Li>
                         <li class="list 5.6">
                             <p class="5.6">71.语音识别（无界面）-V5.6新增</p>
+                            <input class="row code" id="newVoiceRecognizer" type="button" value="按钮">
                             <select id="newVoiceRecognizer_accent">
                                 <option value="mandarin" selected="selected">普通话</option>
                                 <option value="changshanese">长沙话</option>
@@ -106,40 +107,43 @@
                             <p>最大录音时间(毫秒数，string类型)</p>
                             <input type="text" id="newVoiceRecognizer_time" value="10000">
                             <p>是否停止录音</p>
-                            <select id="newVoiceRecognizer_isStop">
+                            录音<input id="newVoiceRecognizer_isStop" class="option" type="radio" value="false"
+                                checked="checked">
+                            停止<input id="newVoiceRecognizer_isStop" class="option" type="radio" value="true">
+                            <!-- <select id="newVoiceRecognizer_isStop">
                                 <option value="false" selected="selected">录音</option>
                                 <option value="true">停止</option>
-                            </select>
-                            <input class="row code" id="newVoiceRecognizer" type="button" value="按钮">
+                            </select> -->
                         </li>
                         <li class="list">
                             <p class="row">6.native-调用手机通信录</p>
-                            <p id="getContacts_success"></p>
                             <input class="row code" id="getContacts" type="button" value="按钮">
+                            <p id="getContacts_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">9.native-获取通讯录信息</p>
+                            <input class="row code" id="getContactAll" type="button" value="按钮">
                             <p id="getContactAll_success">
                             <div class="pre"></div>
                             </p>
-                            <input class="row code" id="getContactAll" type="button" value="按钮">
                         </li>
                         <li class="list">
                             <p class="row">8.native-通过号码获取联系人</p>
+                            <input class="row code" id="getContactName" type="button" value="按钮">
                             <p>请输入手机号码：</p>
                             <input id="getContactName_num" value="10086" type="number">
                             <p id="getContactName_success"></p>
-                            <input class="row code" id="getContactName" type="button" value="按钮">
                         </li>
                         <li class="list">
                             <p class="row">14.native-拨打电话</p>
+                            <input class="row code" id="callPhone" type="button" value="按钮">
                             <p id="callPhone_success"></p>
                             <p>请输入手机号码：</p>
                             <input id="callPhone_num" value="1008611" type="number">
-                            <input class="row code" id="callPhone" type="button" value="按钮">
                         </li>
                         <li class="list">
                             <p class="row">7.native-调用系统发短信功能</p>
+                            <input class="row code" id="sendSMS" type="button" value="按钮">
                             <p id="sendSMS_success"></p>
                             <p>请输入手机号码：</p>
                             <input id="sendSMS_num" value="10086" type="number">
@@ -153,10 +157,10 @@
 				                placeholder提示
 				                maxlength最大字符数
 				                autofocus在页面加载后文本区域自动获得焦点。-->
-                            <input class="row code" id="sendSMS" type="button" value="按钮">
                         </li>
                         <li class="list">
                             <p class="row">12.native-获取网络状态,netStatus为</p>
+                            <input class="row code" id="getNetStatus" type="button" value="按钮">
                             <table>
                                 <tr>
                                     <td>-1</td>
@@ -176,7 +180,6 @@
                                 </tr>
                             </table>
                             <p id="getNetStatus_success"></p>
-                            <input class="row code" id="getNetStatus" type="button" value="按钮">
                         </li>
                         <li class="list">
                             <p class="row">2.native-获取用户登录状态</p>
@@ -185,7 +188,7 @@
                             <p id="userStatus_success"></p>
                         </li>
                         <li class="list">
-                            <p class="interface">45.调用接口-新登录状态（会话校验）V4.0新增</p>
+                            <p class="row interface">45.调用接口-新登录状态（会话校验）V4.0新增</p>
                             <input class="row code" id="checkSessionIsvalid" type="button" value="按钮">
                             <p>相关接口：<br>生产：https://clientaccess.10086.cn/SessionServer-orange/checkIsValid<br>灰度：https://clientaccess.10086.cn/SessionServer-unity/checkIsValid
                             </p>
@@ -193,7 +196,7 @@
                             <p id="checkSessionIsvalid_success"></p>
                         </li>
                         <li class="list 5.2">
-                            <p class="interface">64.调用接口-积分H5单独调用新登录状态接口（会话校验）--V5.2 新增</p>
+                            <p class="row interface">64.调用接口-积分H5单独调用新登录状态接口（会话校验）--V5.2 新增</p>
                             <input class="row code" id="checkSessionIsvalidForJFLib" type="button" value="按钮">
                             <p>相关接口：<br>生产：https://clientaccess.10086.cn/SessionServer-orange/checkIsValid<br>灰度：https://clientaccess.10086.cn/SessionServer-unity/checkIsValid
                             </p>
@@ -300,38 +303,37 @@
                         <li class="list 4.3">
                             <p class="row">52.native-是否显示关闭按钮(V4.3新增)</p>
                             <input class="row code" id="showNavCloseBtn" type="button" value="按钮">
-                            是<input name="showNavCloseBtnRadio" class="option" value="1" type="radio">
-                            否<input name="showNavCloseBtnRadio" class="option" value="0" checked="checked" type="radio">
+                            <input name="showNavCloseBtnRadio" class="option" value="1" type="radio">是
+                            <input name="showNavCloseBtnRadio" class="option" value="0" checked="checked" type="radio">否
                             <!-- <button type="submit" name="showNavCloseBtnRadio" value="1">是</button>
 				<button type="submit" name="showNavCloseBtnRadio" value="0">否</button> -->
                         </li>
                         <li class="list">
                             <p class="row">53.native-是否显示返回按钮(V4.3新增)</p>
                             <input class="row code" id="showNavBackBtn" type="button" value="按钮">
-                            是<input name="showNavBackBtnRadio" class="option" value="1" type="radio">
-                            否<input name="showNavBackBtnRadio" class="option" value="0" checked="checked" type="radio">
+                            <input name="showNavBackBtnRadio" class="option" value="1" type="radio">是
+                            <input name="showNavBackBtnRadio" class="option" value="0" checked="checked" type="radio">否
                         </li>
                         <li class="list">
                             <p class="row">36.native-是否展示返回及关闭按钮(3.8新加)</p>
                             <input class="row code" id="navigatReturn" type="button" value="按钮">
                             <p id="navigatReturn_success"></p>
                             <!-- <p>请选择导航栏返回及关闭按钮的显示状态：</p> -->
-                            显示<input name="updateRadio3" class="option" value="0" type="radio">&nbsp;&nbsp;&nbsp;
+                            显示<input name="updateRadio3" class="option" value="0" type="radio">
                             隐藏<input name="updateRadio3" class="option" value="1" type="radio" checked="checked">
                         </li>
                         <li class="list">
                             <p class="row">23.native-营业厅图标展示与否</p>
-                            <input class="row code" id="searchBizHall" type="button" value="按钮">确认
+                            <input class="row code" id="searchBizHall" type="button" value="按钮">
                             <p id="searchBizHall_success"></p>
                             <!-- <p>请选择是否显示附近营业厅：</p> -->
-                            显示<input name="searchBizRadio" class="option" value="0" checked="checked"
-                                type="radio">&nbsp;&nbsp;&nbsp;
+                            显示<input name="searchBizRadio" class="option" value="0" checked="checked" type="radio">
                             隐藏<input name="searchBizRadio" class="option" value="1" type="radio">
                         </li>
                         <li class="list">
                             <p class="row">18.native-显示分享按钮</p>
                             <input class="row code" id="enableShared" type="button" value="按钮">
-                            <p>直接点击显示按钮</p>
+                            <!-- <p>直接点击显示按钮</p>
                             <p id="enableShared_success"></p>
                             <p>请输入分享标题：</p>
                             <input id="enableShared_tit" value="内容测试" type="text">
@@ -347,7 +349,7 @@
                             <input id="enableShared_type" type="text">
                             <p>请输入dataUrl：(如果type是music或video，则要提供数据链接，默认为空)</p>
                             <input id="enableShared_dataUrl" type="text">
-                            <p>请选择分享渠道:0: 微信朋友圈, 1:微信好友, 2:新浪微博, 3:二维码,4：QQ, 5：QQ空间, 6：短信, 7: 更多</p>
+                            <p>请选择分享渠道:</p>
                             <table>
                                 <tr>
                                     <td><input name="enableShared_shareChannelArray" value="0" type="checkbox">微信朋友圈
@@ -374,9 +376,9 @@
                             </table>
                             <p>请输入活动URL，客户端负责转成二维码图片（截屏分享才有）5.2 新增：</p>
                             <input id="enableShared_qrCodeUrl"
-                                value="https://app.10086.cn/appother/pages/js-sdk-test.html" type="text">
+                                value="https://app.10086.cn/appother/pages/js-sdk-test.html" type="text"> -->
                             <p>请选择是否显示：</p>
-                            显示<input name="sharedRadio" value="0" type="radio" checked="checked">&nbsp;&nbsp;&nbsp;
+                            显示<input name="sharedRadio" value="0" type="radio" checked="checked">
                             <!-- 隐藏<input name="sharedRadio" value="1"  type="radio"> -->
                         </li>
                         <li class="list 5.1">
@@ -548,15 +550,15 @@
                             <p>授权请求信息字串,参数说明见支付宝文档</p>
                             <input type="text" id="alipaySDKauthV2_input" value="">
                         </li>
-                        <li class="list">
+                        <li class="list 5.3">
                             <p class="row">65.拉起和包支付--V5.3 新增</p>
+                            <input class="row code" id="hebaoPay" type="button" value="按钮">
                             <p>测试此能力需下载和包支付相关应用</p>
                             <p id="hebaoPay_success"></p>
                             <p>订单号</p>
                             <input id="hebaoPay_orderSession" value="158489652545" type="text">
                             <p>手机号</p>
                             <input id="hebaoPay_account" value="18334764004" style="width: 100%;" type="tel">
-                            <input class="row code" id="hebaoPay" type="button" value="按钮">拉起和包支付
                         </li>
                         <!-- 自有业务能力调用（暂不对各省开放）-->
                         <!--<li class="list">
