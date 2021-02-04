@@ -28,7 +28,7 @@ fixed	    生成绝对定位的元素，相对于浏览器窗口进行定位。�
 relative	生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
 static	    默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
 inherit	    规定应该从父元素继承 position 属性的值。*/
-ul.tablea {
+ul.table {
     position: relative;
     display: flex;
 }
@@ -36,7 +36,7 @@ ul.tablea {
 
 /*消除列表圆点
 list-style 简写属性在一个声明中设置所有的列表属性。*/
-li.tableb {
+li.table {
     flex: 1;
     height: 60px;
     list-style: none;
