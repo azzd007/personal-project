@@ -147,9 +147,29 @@ li.list>p:first-child{
 
 li.list{
     border-bottom:thin solid #c2c4c5;
+    padding: 0px 0px 30px;
+}
+
+
+input.code{
+    border-bottom:medium ridge #176ea5;
+    background: #1C89CC;
+    color: #fff;
+    padding: 0px 0px 0px 4px;
+}
+
+
+input.option{
+
+} 
+
+
+table{
+    
 }
 
 
 .row{
     display: inline-block;
 }
+
