@@ -30,20 +30,20 @@
                         <li class="list">
                             <p class="row">11.native-手机振动</p>
                             <input class="row code" id="playSound" type="button" value="按钮">
-                            <p id="playSound_success"></p>
+                            <p class="result" id="playSound_success"></p>
                             <!-- <input class="row code" id="playSound">手机振动</p> -->
                         </li>
                         <li class="list">
                             <p class="row">26.native-新手引导</p>
                             <!-- <input class="row code" id="newGuide" type="button" type="button"> -->
                             <input class="row code" id="newGuide" type="button" value="按钮">
-                            <p id="newGuide_success"></p>
+                            <p class="result" id="newGuide_success"></p>
                             <!-- <input class="row code" id="newGuide">新手引导</p> -->
                         </li>
                         <li class="list">
                             <p class="row">27.native-给我评分</p>
                             <input class="row code" id="giveMeScore" type="button" value="按钮">
-                            <p id="giveMeScore_success"></p>
+                            <p class="result" id="giveMeScore_success"></p>
                             <!-- <input class="row code" id="giveMeScore">给我评分</p> -->
                         </li>
                         <li class="list">
@@ -51,12 +51,12 @@
                             <input class="row code" id="pickPhoto" type="button" value="按钮">
                             <!--<p id="pickPhoto_success"></p>-->
                             <!-- <input class="row code" id="pickPhoto">打开相机</p> -->
-                            <img id="pickPhoto_success" src="">
+                            <img class="result" id="pickPhoto_success" src="">
                         </li>
                         <li class="list">
                             <p class="row">5.native-拉起扫一扫</p>
                             <input class="row code" id="qrScan" type="button" value="按钮">
-                            <p id="qrScan_success"></p>
+                            <p class="result" id="qrScan_success"></p>
                             <!-- <input class="row code" id="qrScan">扫一扫</p> -->
                         </li>
                         <li class="list">
@@ -64,7 +64,7 @@
                             <input class="row code" id="encryptString" type="button" value="按钮">
                             <p>只要响应有加密字符串即可</p>
                             <input id="encryptString_str" value="这就是要加密的内容" type="text">
-                            <p id="encryptString_success"></p>
+                            <p class="result" id="encryptString_success"></p>
                             <!-- <input class="row code" id="encryptString">加密</p> -->
                         </li>
                         <Li class="list 5.5">
@@ -75,11 +75,11 @@
                             藏语<input name="speechBroadcast_radio" class="option" type="radio" value="1">
                             <p>播报文本:</p>
                             <input id="speechBroadcast_input" value="来辣，老弟~" type="text">
-                            <p id="speechBroadcast_success"></p>
+                            <p class="result" id="speechBroadcast_success"></p>
                             <!-- <input class="row code" id="speechBroadcast">语音播报触发</p> -->
                         </Li>
                         <li class="list 5.6">
-                            <p class="5.6">71.语音识别（无界面）-V5.6新增</p>
+                            <p class="row">71.语音识别（无界面）-V5.6新增</p>
                             <input class="row code" id="newVoiceRecognizer" type="button" value="按钮">
                             <select id="newVoiceRecognizer_accent">
                                 <option value="mandarin" selected="selected">普通话</option>
@@ -118,13 +118,13 @@
                         <li class="list">
                             <p class="row">6.native-调用手机通信录</p>
                             <input class="row code" id="getContacts" type="button" value="按钮">
-                            <p id="getContacts_success"></p>
+                            <p class="result" id="getContacts_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">9.native-获取通讯录信息</p>
                             <input class="row code" id="getContactAll" type="button" value="按钮">
-                            <p id="getContactAll_success">
                             <div class="pre"></div>
+                            <p class="result" id="getContactAll_success">
                             </p>
                         </li>
                         <li class="list">
@@ -132,23 +132,23 @@
                             <input class="row code" id="getContactName" type="button" value="按钮">
                             <p>请输入手机号码：</p>
                             <input id="getContactName_num" value="10086" type="number">
-                            <p id="getContactName_success"></p>
+                            <p class="result" id="getContactName_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">14.native-拨打电话</p>
                             <input class="row code" id="callPhone" type="button" value="按钮">
-                            <p id="callPhone_success"></p>
                             <p>请输入手机号码：</p>
                             <input id="callPhone_num" value="1008611" type="number">
+                            <p class="result" id="callPhone_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">7.native-调用系统发短信功能</p>
                             <input class="row code" id="sendSMS" type="button" value="按钮">
-                            <p id="sendSMS_success"></p>
                             <p>请输入手机号码：</p>
                             <input id="sendSMS_num" value="10086" type="number">
                             <p>请输入短信内容：</p>
                             <textarea cols="30" rows="4" id="sendSMS_content">JS测试顺利</textarea>
+                            <p class="result" id="sendSMS_success"></p>
                             <!-- <textarea> 标签定义多行的文本输入控件。
                                 相关属性：
                                 cols规定文本区内的可见宽度。
@@ -179,13 +179,13 @@
                                     <td>4G</td>
                                 </tr>
                             </table>
-                            <p id="getNetStatus_success"></p>
+                            <p class="result" id="getNetStatus_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">2.native-获取用户登录状态</p>
                             <input class="row code" id="userStatus" type="button" value="按钮">
                             <p>status为<br>0 未登录；<br>1 服务密码登录；<br>2 短信验证码登录</p>
-                            <p id="userStatus_success"></p>
+                            <p class="result" id="userStatus_success"></p>
                         </li>
                         <li class="list">
                             <p class="row interface">45.调用接口-新登录状态（会话校验）V4.0新增</p>
@@ -193,7 +193,7 @@
                             <p>相关接口：<br>生产：https://clientaccess.10086.cn/SessionServer-orange/checkIsValid<br>灰度：https://clientaccess.10086.cn/SessionServer-unity/checkIsValid
                             </p>
                             <p>status为<br>0（校验失败）<br>1（校验成功）</p>
-                            <p id="checkSessionIsvalid_success"></p>
+                            <p class="result" id="checkSessionIsvalid_success"></p>
                         </li>
                         <li class="list 5.2">
                             <p class="row interface">64.调用接口-积分H5单独调用新登录状态接口（会话校验）--V5.2 新增</p>
@@ -201,12 +201,11 @@
                             <p>相关接口：<br>生产：https://clientaccess.10086.cn/SessionServer-orange/checkIsValid<br>灰度：https://clientaccess.10086.cn/SessionServer-unity/checkIsValid
                             </p>
                             <p>status为<br>0 未登录；<br>1 已登录；</p>
-                            <p id="checkSessionIsvalidForJFLib_success"></p>
+                            <p class="result" id="checkSessionIsvalidForJFLib_success"></p>
                         </li>
                         <li class="list 5.3">
                             <p class="row interface">66.调用接口-登录--V5.3 变更</p>
                             <input class="row code" id="showLogin" type="button" value="按钮">
-                            <p id="showLogin_success"></p>
                             <input id="showLogin_url" value="https://cn.bing.com/" type="text">
                             <p>如配置上方URL<br>选择本网地址后登录异网号码，直接跳转异网登录页，不请求上方URL<br>选择异网地址后登录本网号码，不请求上方URL<br>选择同时支持本网异网地址后，登录本网或异网号码，均会请求上方URL
                             </p>
@@ -218,6 +217,7 @@
                                 <option value="3">同时支持本网和异网</option>
                             </select>
                             <p>登录成功之后再次测试2、45、64号能力
+                            <p class="result" id="showLogin_success"></p>
                         </li>
                         <li class="list 4.8">
                             <p class="row interface">58.调用接口-获取用户登录信息-V4.8 新增 </p>
@@ -226,28 +226,28 @@
                             </p>
                             <p>登录状态下获取信息：（未登录时报错）<br>firstLoginTimebr 第一次登录客户端时间<br>lastLoginTime
                                 最后一次登录客户端时间<br>lastButOneLoginTime 倒数第二次登录客户端时间</p>
-                            <p id="getLoginInfo_success"></p>
+                            <p class="result" id="getLoginInfo_success"></p>
                         </li>
                         <li class="list interface 4.1">
                             <p class="row interface">50.调用接口-注销登录 -V4.1新增</p>
                             <input class="row code" id="quitLogin" type="button" value="按钮">
                             <p>相关接口：<br>https://clientaccess.10086.cn/SessionServer-orange/loginOut</p>
-                            <p id="quitLogin_success"></p>
+                            <p class="result" id="quitLogin_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">3.native-调用二次鉴权</p>
                             <input class="row code" id="showAuthentication" type="button" value="按钮">
-                            <p id="showAuthentication_success"></p>
+                            <p class="result" id="showAuthentication_success"></p>
                         </li>
                         <li class="list 4.0">
                             <p class="row">46. 会话超时处理接口--V4.0新增，5.5变更</p>
                             <input class="row code" id="overTime" type="button" value="按钮">
                             <p>会话超时点击后客户端会拉起登录</p>
-                            <p id="overTime_success"></p>
                             <p>是否需要拉起登录框</p>
                             是<input name="isNeedRemoveLogin_Radio" class="option" type="radio" value="1"
                                 checked="checked">
                             否<input name="isNeedRemoveLogin_Radio" class="option" type="radio" value="0">
+                            <p class="result" id="overTime_success"></p>
                         </li>
                         <!--<li class="list">
 				<p>4. 获取详单数据</p>
@@ -259,31 +259,30 @@
                         <li class="list 5.6">
                             <p class="row">70.一号一终端 获取设备硬件信息--V5.6 新增</p>
                             <input class="row code" id="getDeviceMultiSimInfo" type="button" value="按钮">
-                            <p id="getDeviceMultiSimInfo_success"></p>
                             <p>H5请求到的能开token</p>
                             <input type="text" id="getDeviceMultiSimInfo_input" value="">
+                            <p class="result" id="getDeviceMultiSimInfo_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">1.native-获取用户基础信息</p>
                             <input class="row code" id="getUserInfo" type="button" value="按钮">
-                            <p id="getUserInfo_success"></p>
+                            <p class="result" id="getUserInfo_success"></p>
                         </li>
                         <li class="list 3.8">
                             <p class="row">37.native-客户端信息采集(3.8新加)</p>
                             <input class="row code" id="clientInformat" type="button" value="按钮">
-                            <p id="clientInformat_success"></p>
+                            <p class="result" id="clientInformat_success"></p>
                         </li>
                         <li class="list 3.8">
                             <p class="row">34.native-设置webView标题(3.8新加)</p>
                             <input class="row code" id="setWebTitle" type="button" value="按钮">
-                            <p id="setWebTitle_success"></p>
                             <p>请输入设置的标题：</p>
                             <input id="setWebView_title" value="新标题设置成功" type="text">
+                            <p class="result" id="setWebTitle_success"></p>
                         </li>
                         <li class="list 4.0">
                             <p class="row">40.native-设置导航栏颜色 -V4.0新增,4.2修改,添加了2个字段</p>
                             <input class="row code" id="navigationColorSetting" type="button" value="按钮">
-                            <p id="navigationColorSetting_success"></p>
                             <p>标题栏背景颜色</p>
                             <select class="ComboBox" id="navigationColorSetting_Color">
                                 <option value="#FF6A6A" type="text">红色</option>
@@ -299,6 +298,7 @@
                                 <option value="2" type="text">白色</option>
                                 <option value="1" type="text">黑色</option>
                             </select>
+                            <p class="result" id="navigationColorSetting_success"></p>
                         </li>
                         <li class="list 4.3">
                             <p class="row">52.native-是否显示关闭按钮(V4.3新增)</p>
@@ -317,18 +317,18 @@
                         <li class="list">
                             <p class="row">36.native-是否展示返回及关闭按钮(3.8新加)</p>
                             <input class="row code" id="navigatReturn" type="button" value="按钮">
-                            <p id="navigatReturn_success"></p>
                             <!-- <p>请选择导航栏返回及关闭按钮的显示状态：</p> -->
                             显示<input name="updateRadio3" class="option" value="0" type="radio">
                             隐藏<input name="updateRadio3" class="option" value="1" type="radio" checked="checked">
+                            <p class="result" id="navigatReturn_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">23.native-营业厅图标展示与否</p>
                             <input class="row code" id="searchBizHall" type="button" value="按钮">
-                            <p id="searchBizHall_success"></p>
                             <!-- <p>请选择是否显示附近营业厅：</p> -->
                             显示<input name="searchBizRadio" class="option" value="0" checked="checked" type="radio">
                             隐藏<input name="searchBizRadio" class="option" value="1" type="radio">
+                            <p class="result" id="searchBizHall_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">18.native-显示分享按钮</p>
@@ -384,12 +384,11 @@
                         <li class="list 5.1">
                             <p class="row">63.native-隐藏分享按钮-V5.1 新增</p>
                             <input class="row code" id="hiddenShareButton" type="button" value="按钮">
-                            <p id="hiddenShareButton_success"></p>
+                            <p class="result" id="hiddenShareButton_success"></p>
                         </li>
                         <li class="list 5.1">
                             <p class="row">19.native-分享功能-5.0变更单独渠道分享,5.1变更快照</p>
                             <input class="row code" id="shareMessage" type="button" value="按钮">
-                            <p id="shareMessage_success"></p>
                             <p>请输入分享标题：</p>
                             <input id="shareMessage_tit" value="分享标题-互夸互夸" type="text">
                             <p>请输入分享链接：</p>
@@ -468,6 +467,7 @@
                                 <p>小程序描述：</p>
                                 <input type="text" id="shareMessage_description" value="小程序描述">
                             </div>
+                            <p class="result" id="shareMessage_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">10. 打开新页面(请根据相关文档填写)</p>
@@ -486,12 +486,11 @@
                             显示<input name="isHiddenNavigationBar_radio" class="option" type="radio" value="0"
                                 checked="checked">
                             隐藏<input name="isHiddenNavigationBar_radio" class="option" type="radio" value="1">
-                            <p id="newWebview_success"></p>
+                            <p class="result" id="newWebview_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">15. H5调用native功能页面(请根据相关文档填写)</p>
                             <input class="row code" id="goNativePage" type="button" value="按钮">
-                            <p id="goNativePage_success"></p>
                             <p>请输入页面编码：</p>
                             <input id="goNativePage_page" value="BF00902" type="text">
                             <p>请输入功能编码：</p>
@@ -502,13 +501,13 @@
                                 <option value="BF00501" type="text">我的账单</option>
                                 <option value="BF00801" type="text">套餐余量</option>
                             </select>
+                            <p class="result" id="goNativePage_success"></p>
                         </li>
                         <!-- 分享能力-->
                         <li class="list">
                             <p class="row">16. 查询用户营销活动信息-生产环境测试</p>
                             <input class="row code" id="getUserMarketInfo" type="button" value="按钮">
                             <p>isNewUser为<br>0：老用户&nbsp;&nbsp;&nbsp;1：新用户</p>
-                            <p id="getUserMarketInfo_success"></p>
                             <p>请输入活动ID：</p>
                             <input id="getUserMarketInfo_id" value="5001429" type="text">
                             <p>请输入活动开始时间：(YYYY-MM-DD 24HH:MM:SS)</p>
@@ -520,6 +519,7 @@
                                 <option value="18334764004" type="number">老用户</option>
                                 <option value="18829296801" type="number">新用户</option>
                             </select>
+                            <p class="result" id="getUserMarketInfo_success"></p>
                         </li>
                         <li class="list 5.0">
                             <p class="row">62.请求接口-打开和家亲功能页面--V5.0 新增</p>
@@ -541,24 +541,24 @@
                             <input id="hejiaqin_productId" value="非必填" type="text">
                             <p>推送参数:</p>
                             <input id="hejiaqin_pushParams" value="key1=value1&amp;key2=value2" type="text">
-                            <p id="hejiaqin_success"></p>
+                            <p class="result" id="hejiaqin_success"></p>
                         </li>
                         <li class="list 5.6">
                             <p class="row">73.支付宝授权登录 -V5.6 新增</p>
                             <input class="row code" id="alipaySDKauthV2" type="button" value="按钮">
-                            <p id="alipaySDKauthV2_success"></p>
                             <p>授权请求信息字串,参数说明见支付宝文档</p>
                             <input type="text" id="alipaySDKauthV2_input" value="">
+                            <p class="result" id="alipaySDKauthV2_success"></p>
                         </li>
                         <li class="list 5.3">
                             <p class="row">65.拉起和包支付--V5.3 新增</p>
                             <input class="row code" id="hebaoPay" type="button" value="按钮">
                             <p>测试此能力需下载和包支付相关应用</p>
-                            <p id="hebaoPay_success"></p>
                             <p>订单号</p>
                             <input id="hebaoPay_orderSession" value="158489652545" type="text">
                             <p>手机号</p>
                             <input id="hebaoPay_account" value="18334764004" style="width: 100%;" type="tel">
+                            <p class="result" id="hebaoPay_success"></p>
                         </li>
                         <!-- 自有业务能力调用（暂不对各省开放）-->
                         <!--<li class="list">
@@ -587,17 +587,16 @@
                         <li class="list Android">
                             <p class="row">17. 获取IMEI-仅安卓</p>
                             <input class="row code" id="getImei" type="button" value="按钮">
-                            <p id="getImei_success"></p>
+                            <p class="result" id="getImei_success"></p>
                         </li>
                         <li class="list 4.0 Android">
                             <p class="row">41. 获得本机所有应用的列表(V4.0新增)-仅安卓</p>
                             <input class="row code" id="getClientApplicationList" type="button" value="按钮">
-                            <p id="getClientApplicationList_success"></p>
+                            <p class="result" id="getClientApplicationList_success"></p>
                         </li>
                         <li class="list 4.0 Android">
                             <p class="row">42. 打开应用(V4.0新增)-仅安卓</p>
                             <input class="row code" id="openApplication" type="button" value="按钮">
-                            <p id="openApplication_success"></p>
                             <select class="ComboBox" id="openApplication_com">
                                 <option value="com.tencent.mm">微信</option>
                                 <option value="com.tencent.mobileqq">QQ</option>
@@ -605,33 +604,34 @@
                                 <option value="com.UCMobile">UC</option>
                                 <option value="com.eg.android.AlipayGphone">支付宝</option>
                             </select>
+                            <p class="result" id="openApplication_success"></p>
                         </li>
                         <li class="list 4.0 Android">
                             <p class="row">43. 调用下载(V4.0新增)-仅安卓</p>
                             <input class="row code" id="downloadApplication" type="button" value="按钮">
-                            <p id="downloadApplication_success"></p>
                             <p>请填写需要下载的url地址</p>
                             <input id="downloadApplication_com"
                                 value="https://app.10086.cn/downfile/apk/ChinaMobile10086.apk" type="text">
+                            <p class="result" id="downloadApplication_success"></p>
                         </li>
                         <li class="list 4.0 Android">
                             <p class="row">44. 调起客户端插件(V4.0新增)-仅安卓</p>
                             <input class="row code" id="startPlugin" type="button" value="按钮">
-                            <p id="startPlugin_success"></p>
                             <p>插件的包名称:</p>
                             <input id="startPlugin_pluginPackageName" value="com.leadeon.cmcc.plugin" type="text">
                             <p>启动页面的名称:</p>
                             <input id="startPlugin_pluginPageName"
                                 value="com.leadeon.cmcc.plugin.views.traffic.TrafficCheckActivity" type="text">
+                            <p class="result" id="startPlugin_success"></p>
                         </li>
                         <li class="list Android">
                             <p class="row">28. 版本检测-仅安卓</p>
                             <input class="row code" id="checkVersion" type="button" value="按钮">
-                            <p id="checkVersion_success"></p>
                             <p>请选择是否显示升级提示：</p>
                             显示<input name="updateRadio" class="option" value="0" checked="checked"
                                 type="radio">&nbsp;&nbsp;&nbsp;
                             隐藏<input name="updateRadio" class="option" value="1" type="radio">
+                            <p class="result" id="checkVersion_success"></p>
                         </li>
                         <!-- <li class="list">
 				<p>51. 设定语音识别，在键盘弹出时提供入口(V4.2新增)</p>
@@ -650,7 +650,6 @@
                         <li class="list 5.6">
                             <p class="row">72.H5页面打开小程序 -V5.6 新增</p>
                             <input class="row code" id="openMiniProgram" type="button" value="按钮">
-                            <p id="openMiniProgram_success"></p>
                             <p>小程序的username：</p>
                             <input type="text" id="openMiniProgram_userName" value="gh_77a83b24xxx">
                             <p>打开小程序指定页面路径：</p>
@@ -661,6 +660,7 @@
                                 <option value="1">开发版</option>
                                 <option value="2">体验版</option>
                             </select>
+                            <p class="result" id="openMiniProgram_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">56. scheme打开其他应用(V4.5新增)</p>
@@ -691,13 +691,13 @@
                         <li class="list">
                             <p class="row">31. 请求接口-网络请求体数字签名(3.2新增)</p>
                             <input class="row code" id="digitalSignature" type="button" value="按钮">
-                            <p id="digitalSignature_success"></p>
                             <p>url：</p>
                             <input id="digitalSignature_url"
                                 value="https://clientaccess.10086.cn/biz-orange/DH/homeArea/getAreaList" type="text">
                             <p>请求体：</p>
                             <textarea cols="30" rows="6"
                                 id="digitalSignature_body">{"cid":"/FROJib4WMyL9gRV6YgStu4UOhtGtbzgzUvJLR22ntRlAtGq+MAYO/eAbMzmi7JFkeVaNfIiowGsc7xkhQ07gxDmHv52HlkBwTduoX9VsGEcLFKKhyPvbfY+RRgdiDB4","t":"JSESSIONID=7d97b538-38b7-41a2-bf31-58e2824f38d1; UID=cce725446dda4baebaf00e0fa6b28eee; Comment=SessionServer-unity; Path=/; Secure","sn":"HONOR H30-L01","cv":"3.1.0.1","st":"9","sv":"4.4.2","sp":"720x1280","reqBody":{"cellNum":"OWJ48EsLeadozGGpZIyNPLfDfEeJ54%2F5qIfKo%2FsGOcZ0ON1R2B7ToaL8t89N8z7Oz04joru1CW0u0N5vTJSKZ9%2BAgTPaiaOrUOajTElDUdNb5cmNnAP1aNZtJ4%2FkaHAGC0gbcvW1Ate8MCEqOOvYkyMsNk%2BdBnjrf8u4VpLy7q0%3D","friendsCellNum":"FFpzcHEakzw24QjGbTDNI5%2FBG0U5mULcezbGTqIauHw3TFxf6fSHMdhP9z0vRPsuF9BJmdh40dLL8sAG%2BqKylYvsdvrcaAKzhpLc5OofaOvn%2FZ9W%2Bfxdsentfmp253CP7IC779QRYCn0IBficzPeCC9oStxrgL8DZotHotFrc8A%3D","flag":2}}</textarea>
+                            <p class="result" id="digitalSignature_success"></p>
                         </li>
                         <!-- <li class="list">
 				<p>32. 调用登录</p>
@@ -707,7 +707,6 @@
                         <li class="list">
                             <p class="row">33. 拉起统一支付</p>
                             <input class="row code" id="getNewPay" type="button" value="按钮">
-                            <p id="getNewPay_success"></p>
                             <!-- <p>渠道ID说明:11:移动商城销售子系统（商品购买）20:移动商城服务子系统（充值缴费）10:流量中心（待加入，暂不可用）</p> -->
                             <p>渠道号：</p>
                             <!-- <input id="getNewPay_num1" value="11" type="number"> -->
@@ -718,11 +717,11 @@
                             </select>
                             <p>订单号：</p>
                             <input id="getNewPay_num2" value="114688059458500148" type="number">
+                            <p class="result" id="getNewPay_success"></p>
                         </li>
                         <li class="list 3.8">
                             <p class="row">35. 二级页面情感化插件(3.8新加)</p>
                             <input class="row code" id="secondPlug" type="button" value="按钮">
-                            <p id="secondPlug_success"></p>
                             <p>请输入情感化插件id：</p>
                             <input id="secondPlug_id" value="153" type="number">
                             <p>请输入图标图片URL：</p>
@@ -753,6 +752,7 @@
                                 <option value="13">套餐余量</option>
                                 <option value="15">业务办理</option>
                             </select>
+                            <p class="result" id="secondPlug_success"></p>
                         </li>
                         <!-- <li class="list">
 				<p class="row">29. 通知客户端浇花签到状态(3.2新增)</p>
@@ -765,7 +765,6 @@
                         <li class="list 3.2">
                             <p class="row">30. 保存图片到相册(3.2新增)</p>
                             <input class="row code" id="savePhoto" type="button" value="按钮">
-                            <p id="savePhoto_success"></p>
                             <p>传参方式：</p>
                             url<input name="updateRadio2" value="1" checked="checked" type="checkbox">&nbsp;&nbsp;&nbsp;
                             base64<input name="updateRadio2" value="2" type="checkbox">&nbsp;&nbsp;&nbsp;
@@ -778,6 +777,7 @@
                             <input id="savePhoto3" value="JVBE" style="display: none;" type="text">
                             <p>安卓手机图片命名：</p>
                             <input id="savePhotoNo" value="中国移动" type="text">
+                            <p class="result" id="savePhoto_success"></p>
                         </li>
                         <li class="list 4.1">
                             <p class="row">48. 多图分享 -V4.1新增</p>
@@ -802,19 +802,19 @@
                                         type="checkbox"><img
                                         src="http://demo.sc.chinaz.com/Files/pic/icons/5212/517.png">png</p>
                             </div>
-                            <p id="imagesShare_success"></p>
+                            <p class="result" id="imagesShare_success"></p>
                         </li>
 
                         <li class="list 4.7">
                             <p class="row">57.请求接口-Uid有效性校验 V4.7.0新增</p>
                             <input class="row code" id="checkUID" type="button" value="按钮">
-                            <p id="checkUID_success"></p>
                             <p>域名</p>
                             <input id="checkUID_domain" value="https://app.10086.cn" type="text">
                             <p>url地址</p>
                             <input type="text" id="checkUID_url" value="https://app.10086.cn/" />
                             <p>渠道编码</p>
                             <input id="checkUID_chanelId" value="12006" type="text">
+                            <p class="result" id="checkUID_success"></p>
                         </li>
 
                         <!-- <li class="list">
@@ -839,113 +839,112 @@
                             <p class="row">39. 清除缓存(3.8新加)</p>
                             <input class="row code" id="cleanCache" type="button" value="按钮">
                             <p>点击清理缓存按钮以后请关闭当前webView，二维码重新扫描当前地址，使用Fiddler抓包查看当前地址的http状态码,304说明清除失败，200说明清除成功</p>
-                            <p id="cleanCache_success"></p>
+                            <p class="result" id="cleanCache_success"></p>
                         </li>
                         <li class="list 4.1">
                             <p class="row">47. 任意二级页面返回一级页面--V4.1新增</p>
                             <input class="row code" id="backToRootView" type="button" value="按钮">
                             <p> 点击后任意二级页面返回一级页面</p>
-                            <p id="backToRootView_success"></p>
+                            <p class="result" id="backToRootView_success"></p>
                         </li>
                         <li class="list 3.8">
                             <p class="row">38. 关闭当前webview(3.8新加)</p>
                             <input class="row code" id="closeCurrentWebView" type="button" value="按钮">
-                            <p id="closeCurrentWebView_success"></p>
+                            <p class="result" id="closeCurrentWebView_success"></p>
                         </li>
                         <li class="list 4.1">
                             <p class="row">49. 请求接口-刷新首页--V4.1新增</p>
                             <input class="row code" id="mainPageUpdate" type="button" value="按钮">
                             <p> 安卓点击后即刻刷新首页<br>iOS点击后暂不请求接口，待返回首页时执行刷新操作</p>
-                            <p id="mainPageUpdate_success"></p>
+                            <p class="result" id="mainPageUpdate_success"></p>
                         </li>
                         <li class="list 5.5">
                             <p class="row">68. iOS禁止浏览器上滑回弹效果-V5.5 新增</p>
                             <input class="row code" id="forbiddenWebviewScrollStyle" type="button" value="按钮">
-                            <p id="forbiddenWebviewScrollStyle_success"></p>
+                            <p class="result" id="forbiddenWebviewScrollStyle_success"></p>
                         </li>
                         <li class="list 5.5">
                             <p class="row">69.是否隐藏导航栏（即全屏webview）-V5.5 新增</p>
                             <input class="row code" id="hiddenNavigationBar" type="button" value="按钮">
-                            <p id="hiddenNavigationBar_success"></p>
                             <p>导航状态:</p>
                             显示<input name="hiddenNavigationBar_radio" class="option" type="radio" value="0"
                                 checked="checked">
                             隐藏<input name="hiddenNavigationBar_radio" class="option" type="radio" value="1">
+                            <p class="result" id="hiddenNavigationBar_success"></p>
                         </li>
                         <li class="list 5.6">
                             <p class="row">73.支付宝授权登录 -V5.6 新增</p>
                             <input class="row code" id="alipaySDKauthV2" type="button" value="按钮">
-                            <p id="alipaySDKauthV2_success"></p>
                             <p>授权请求信息字串,参数说明见支付宝文档</p>
                             <input type="text" id="alipaySDKauthV2_input" value="">
+                            <p class="result" id="alipaySDKauthV2_success"></p>
                         </li>
                         <li class="list 5.6">
                             <p class="row">74.一号一终端回调函数 -V5.6 测试用</p>
                             <input class="row code" id="ceshilizi" type="button" value="按钮">
-                            <p id="ceshilizi_success"></p>
                             <p>EID</p>
                             <input type="text" id="ceshi1_input" value="1234">
                             <p>ICCID</p>
                             <input type="text" id="ceshi2_input" value="123456">
+                            <p class="result" id="ceshilizi_success"></p>
                         </li>
                         <li class="list 5.7">
                             <p class="row">75.智能语义理解 -V5.7 新增</p>
                             <input class="row code" id="AISpeechUnderStander" type="button" value="按钮">
-                            <p id="AISpeechUnderStander_success"></p>
                             <p>识别语句</p>
                             <input type="text" id="AISpeechUnderStander_text" value="充值">
+                            <p class="result" id="AISpeechUnderStander_success"></p>
                         </li>
                         <li class="list 5.7">
                             <p class="row">76.本地录音 -V5.7 新增</p>
                             <input class="row code" id="audioRecord" type="button" value="按钮">
-                            <p id="audioRecord_success"></p>
                             <p>是否停止录音</p>
                             <select id="audioRecord_isStop">
                                 <option value="false" selected="selected">录音</option>
                                 <option value="true">停止</option>
                             </select>
+                            <p class="result" id="audioRecord_success"></p>
                         </li>
                         <li class="list 5.8">
                             <p class="row">77.判断应用是否安装 -V5.8 新增</p>
                             <input class="row code" id="isInstall" type="button" value="按钮">
-                            <p id="isInstall_success"></p>
                             <p>判断APP的包名，字符串类型，必填 ，例如 com.sina.weibo</p>
                             <input type="text" id="isInstall_text" value="com.sina.weibo">
+                            <p class="result" id="isInstall_success"></p>
                         </li>
                         <li class="list 5.8">
                             <p class="row">78.打开和包下载地址 -V5.8 新增</p>
                             <input class="row code" id="openHeBaoURL" type="button" value="按钮">
-                            <p id="openHeBaoURL_success"></p>
                             <p>应用外打开和包下载地址，地址内置客户端：https://p.10086.cn/info/wap/sjqb/cpb/jsym/index.html</p>
+                            <p class="result" id="openHeBaoURL_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">79.禁止webview滑动返回效果-V5.8.2 新增,只iOS可用</p>
                             <input class="row code" id="forbiddenWebviewScrollBack" type="button" value="按钮">
-                            <p id="forbiddenWebviewScrollBack_success"></p>
+                            <p class="result" id="forbiddenWebviewScrollBack_success"></p>
                         </li>
                         <li class="list 6.0">
                             <p class="row">80.获取客户端图像识别支持的识别种类 -V6.0新增</p>
                             <input class="row code" id="imageRecognitionLists" type="button" value="按钮">
-                            <p id="imageRecognitionLists_success"></p>
                             <p>获取客户端识别模型当前支持识别的对象列表 。</p>
+                            <p class="result" id="imageRecognitionLists_success"></p>
                         </li>
                         <li class="list 6.0">
                             <p class="row">81.调用客户端图像识别 -V6.0新增</p>
                             <input class="row code" id="imageRecognition" type="button" value="按钮">
-                            <p id="imageRecognition_success"></p>
+                            <p class="result" id="imageRecognition_success"></p>
                         </li>
                         <li class="list 6.0">
                             <p class="row">82.AR垃圾分类-V6.0新增</p>
                             <input class="row code" id="trashRecognition" type="button" value="按钮">
-                            <p id="trashRecognition_success"></p>
                             <p>获取客户端识别垃圾分类页面，客户端提供拍照页面，拿到图片后上传讯飞后台，拿到识别结果后跳转指定页面。识别相关讯飞提供支持。</p>
                             <p>客户端图像上传接口地址</p>
                             <input type="text" id="trashRecognition_uploadURL" value="">
+                            <p class="result" id="trashRecognition_success"></p>
                         </li>
                         <li class="list 6.2">
                             <p class="row">83.宽带视频客服sdk调用(6.2新增)</p>
                             <input class="row code" id="startVoipVoiceOrVideo" type="button" value="按钮">
-                            <p id="startVoipVoiceOrVideo_success"></p>
                             <p>0语音客服,1视频客服</p>
                             <select id="startVoipVoiceOrVideo_type">
                                 <option value="0" selected="selected">语音客服</option>
@@ -978,84 +977,84 @@
                             <input type="text" id="startVoipVoiceOrVideo_nickName" value="">
                             <p>省编码</p>
                             <input type="text" id="startVoipVoiceOrVideo_provinceCode" value="">
+                            <p class="result" id="startVoipVoiceOrVideo_success"></p>
                         </li>
                         <li class="list 6.1.5 iOS">
                             <p class="row">84.ios禁止webphttps及webphttp拦截 调用(6.1.5新增)</p>
                             <input class="row code" id="forbiddenWebp" type="button" value="按钮">
-                            <p id="forbiddenWebp_success"></p>
                             <p>安卓没有滑动返回效果，故只iOS可用，只针对 当前webview 有效，禁用后无法恢复，右上角返回按钮不受影响。</p>
+                            <p class="result" id="forbiddenWebp_success"></p>
                         </li>
                         <li class="list 6.2">
                             <p class="row">85.通知客户端本次识别目标 -V6.2新增</p>
                             <input class="row code" id="imageRecognitionConfig" type="button" value="按钮">
-                            <p id="imageRecognitionConfig_success"></p>
                             <!-- <p >调用时机：页面初始化完成，调用`leadeon.imageRecognitionLists`成功后调用本方法。</p>
-				<p >通过`imageRecognitionLists`拿到客户端支持的识别列表后，根据自己的业务从中选取对应的识别种类，按照下面要求组装业务数据，下发客户端以便预下载相关资源。</p> -->
+                                <p >通过`imageRecognitionLists`拿到客户端支持的识别列表后，根据自己的业务从中选取对应的识别种类，按照下面要求组装业务数据，下发客户端以便预下载相关资源。</p> -->
                             <p>(必填)扫一扫页面上部标题</p>
                             <input type="text" id="imageRecognitionConfig_title" value="标题文字">
                             <!-- <p>(必填)扫一扫识别的标签的编码</p>
-				<select id="imageRecognitionConfig_labelCode">
-				</select>
-				<p>(必填)扫一扫识别成功参考，可以参考`leadeon.imageRecognitionLists`返回值，设置越高识别率越低，越不容易出现误识别。</p>
-				<input type="text" id="imageRecognitionConfig_confidence" value="0.8"/>
-				<p>识别成功后的跳转地址,识别成功用户点击跳转后，客户端打开此页面会在地址后面拼接，"13868866888_5G_1"串，通过RSA加密后生成，类似于 “http://xxx.html?CMCCRec=9e6de174300cbea98adc8f02c6c0eafa”,结果页使用我们提供的RSA解密库解密后使用.如果该地址携带参数，调用方必须保证相关参数进行URL编码，以避免跳转异常</p>
-				<input type="text" id="imageRecognitionConfig_redirectURL" value=""/>
-				<p>营销活动id</p>
-				<input type="text" id="imageRecognitionConfig_markId" value=""/>
-				<p>是否分享0：不分享   1：分享 </p>
-				<select id="imageRecognitionConfig_isShareConfig">
-					<option value="1" selected="selected">是</option>
-					<option value="0" >否</option>
-				</select>
-				<p>(必填)识别成功后展示的类型</p>
-				<select id="imageRecognitionConfig_showType">
-					<option value="1" selected="selected">文本模式，用户点击文字跳转</option>
-					<option value="2" >单图模式（jpg、png、gif），用户点击图片跳转</option>
-					<option value="3" >序列帧图模式，用户点击图片跳转</option>
-					<option value="4" >识别成功后回传识别结果给调用页面，不打开新页面</option>
-				</select>
-				<p>(必填)文本模式时是显示的文字，单图模式时是图片地址，序列帧图模式时是压缩包下载地址</p>
-				<input type="text" id="imageRecognitionConfig_showValue" value="识别成功，点击查看"/>
-				<p>(必填)序列帧图的总展示时间，单位秒，showType为3时才有意义</p> -->
+                                    <select id="imageRecognitionConfig_labelCode">
+                                    </select>
+                                    <p>(必填)扫一扫识别成功参考，可以参考`leadeon.imageRecognitionLists`返回值，设置越高识别率越低，越不容易出现误识别。</p>
+                                    <input type="text" id="imageRecognitionConfig_confidence" value="0.8"/>
+                                    <p>识别成功后的跳转地址,识别成功用户点击跳转后，客户端打开此页面会在地址后面拼接，"13868866888_5G_1"串，通过RSA加密后生成，类似于 “http://xxx.html?CMCCRec=9e6de174300cbea98adc8f02c6c0eafa”,结果页使用我们提供的RSA解密库解密后使用.如果该地址携带参数，调用方必须保证相关参数进行URL编码，以避免跳转异常</p>
+                                    <input type="text" id="imageRecognitionConfig_redirectURL" value=""/>
+                                    <p>营销活动id</p>
+                                    <input type="text" id="imageRecognitionConfig_markId" value=""/>
+                                    <p>是否分享0：不分享   1：分享 </p>
+                                    <select id="imageRecognitionConfig_isShareConfig">
+                                        <option value="1" selected="selected">是</option>
+                                        <option value="0" >否</option>
+                                    </select>
+                                    <p>(必填)识别成功后展示的类型</p>
+                                    <select id="imageRecognitionConfig_showType">
+                                        <option value="1" selected="selected">文本模式，用户点击文字跳转</option>
+                                        <option value="2" >单图模式（jpg、png、gif），用户点击图片跳转</option>
+                                        <option value="3" >序列帧图模式，用户点击图片跳转</option>
+                                        <option value="4" >识别成功后回传识别结果给调用页面，不打开新页面</option>
+                                    </select>
+                                    <p>(必填)文本模式时是显示的文字，单图模式时是图片地址，序列帧图模式时是压缩包下载地址</p>
+                                    <input type="text" id="imageRecognitionConfig_showValue" value="识别成功，点击查看"/>
+                                    <p>(必填)序列帧图的总展示时间，单位秒，showType为3时才有意义</p> -->
                             <p>内容</p>
                             <textarea id="imageRecognitionConfig_info" rows="10" cols="20"></textarea>
+                            <p class="result" id="imageRecognitionConfig_success"></p>
                         </li>
                         <li class="list 6.3">
                             <p class="row">86.调用接口-问卷调查调用与展示-6.3新增</p>
                             <input class="row code" id="showQuestionnaire" type="button" value="按钮">
-                            <p id="showQuestionnaire_success"></p>
                             <p>页面编码 1:流量查询 2:语音查询 3:话费查询4:套餐余量5:已订业务 6:我的账单7:我的订单。</p>
                             <input type="text" id="showQuestionnaire_pageFlag" value="1">
+                            <p class="result" id="showQuestionnaire_success"></p>
                         </li>
                         <li class="list">
                             <p class="row">87.调用接口-问卷调查提交成功反馈 -6.3新增</p>
                             <input class="row code" id="replyAfterQuestionnaireSummit" type="button" value="按钮">
-                            <p id="replyAfterQuestionnaireSummit_success"></p>
+                            <p class="result" id="replyAfterQuestionnaireSummit_success"></p>
                         </li>
                         <li class="list 6.3">
                             <p class="row">88.设备登录风控分析-6.3新增</p>
                             <input class="row code" id="deviceLoginAnalyse" type="button" value="按钮">
-                            <p id="deviceLoginAnalyse_success"></p>
+                            <p class="result" id="deviceLoginAnalyse_success"></p>
                         </li>
                         <li class="list 6.3">
                             <p class="row">89.用户标签风控分析-6.3新增</p>
                             <input class="row code" id="userLoginAnalyse" type="button" value="按钮">
-                            <p id="userLoginAnalyse_success"></p>
+                            <p class="result" id="userLoginAnalyse_success"></p>
                         </li>
                         <li class="list 6.3">
                             <p class="row">90.获取网络及运营商信息-6.3新增</p>
                             <input class="row code" id="getNetInfo" type="button" value="按钮">
-                            <p id="getNetInfo_success"></p>
+                            <p class="result" id="getNetInfo_success"></p>
                         </li>
                         <li class="list 6.4">
                             <p class="row">91.获取页面标题栏加状态栏高度-V6.4新增</p>
                             <input class="row code" id="getTitleHeight" type="button" value="按钮">
-                            <p id="getTitleHeight_success"></p>
+                            <p class="result" id="getTitleHeight_success"></p>
                         </li>
                         <li class="list 6.4">
                             <p class="row">92.打开指定的移动直播间-V6.4新增</p>
                             <input class="row code" id="openLiveRoom" type="button" value="按钮">
-                            <p id="openLiveRoom_success"></p>
                             <p>主播id,必填</p>
                             <input type="text" id="openLiveRoom_anchorId" value="">
                             <p>分享人手机号DES加密,非必填</p>
@@ -1067,28 +1066,27 @@
                                 <option value="0" selected="selected">不关闭</option>
                                 <option value="1">关闭</option>
                             </select>
+                            <p class="result" id="openLiveRoom_success"></p>
                         </li>
                         <li class="list 6.4">
                             <p class="row">93.获取浮窗任务完成情况-V6.4新增</p>
                             <input class="row code" id="getFloatWindowStatus" type="button" value="按钮">
-                            <p id="getFloatWindowStatus_success"></p>
                             <p>当前页面地址</p>
                             <input type="text" id="getFloatWindowStatus_currentUrl" value="">
                             <p>需要查询状态的任务编号</p>
                             <input type="text" id="getFloatWindowStatus_code" value="">
+                            <p class="result" id="getFloatWindowStatus_success"></p>
                         </li>
                         <li class="list 6.5">
                             <p class="row">94.调用接口-导航栏定制指定的功能-V6.5新增</p>
-                            <input class="row code" id="setNavigationFuncAtSecRightBtn" type="button"
-                                value="按钮">导航栏定制指定的功能
-                            <p id="setNavigationFuncAtSecRightBtn_success"></p>
+                            <input class="row code" id="setNavigationFuncAtSecRightBtn" type="button" value="按钮">
                             <p>功能代码,1:搜索</p>
                             <input type="text" id="setNavigationFuncAtSecRightBtn_funcName" value="1">
+                            <p class="result" id="setNavigationFuncAtSecRightBtn_success"></p>
                         </li>
                         <li class="list 6.5">
                             <p class="row">94.直播回放-V6.5新增</p>
                             <input class="row code" id="openLivePlayback" type="button" value="按钮">
-                            <p id="openLivePlayback_success"></p>
                             <p>主播手机号,必填</p>
                             <input type="text" id="openLivePlayback_anchorMobile" value="">
                             <p>视频地址,必填</p>
@@ -1098,24 +1096,25 @@
                                 <option value="0" selected="selected">预告</option>
                                 <option value="1">回放</option>
                             </select>
+                            <p class="result" id="openLivePlayback_success"></p>
                         </li>
                         <li class="list 6.6">
                             <p class="row">95.和彩云SDK获取个人云空间-V6.6新增</p>
                             <input class="row code" id="getFileDiskInfo" type="button" value="按钮">
                             <p>调用前请保证已经是登录状态，单位MB。</p>
-                            <p id="getFileDiskInfo_success"></p>
+                            <p class="result" id="getFileDiskInfo_success"></p>
                         </li>
                         <li class="list 6.6">
                             <p class="row">96.和彩云SDK获取家庭云空间-V6.6新增</p>
                             <input class="row code" id="getFamilyDiskInfo" type="button" value="按钮">
                             <p>调用前请保证已经是登录状态，单位MB。。</p>
-                            <p id="getFamilyDiskInfo_success"></p>
+                            <p class="result" id="getFamilyDiskInfo_success"></p>
                         </li>
                         <li class="list 6.6">
                             <p class="row">97.和彩云SDK获取用户权益-V6.6新增</p>
                             <input class="row code" id="queryUserBenefits" type="button" value="按钮">
                             <p>调用前请保证已经是登录状态。0-非会员 1-普通会员，2-超级会员，3-尊享会员</p>
-                            <p id="queryUserBenefits_success"></p>
+                            <p class="result" id="queryUserBenefits_success"></p>
                         </li>
                         <li class="list 6.6">
                             <p class="row">98.页面不可见时暂停声音-V6.6新增</p>
@@ -1128,7 +1127,7 @@
                         <li class="list 6.7">
                             <p class="row">99.Ar活动页面调用-V6.7新增</p>
                             <input class="row code" id="arForHtml5" type="button" value="按钮">
-                            <p id="arForHtml5_success"></p>
+                            <p class="result" id="arForHtml5_success"></p>
                         </li>
                         <!-- 
 							<li class="list">
