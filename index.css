@@ -88,7 +88,7 @@ length	设置固定的行间距。
 %	    基于当前字体尺寸的百分比行间距。
 inherit	规定应该从父元素继承 line-height 属性的值。*/
 li+input+label {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
     background: #ccc;
