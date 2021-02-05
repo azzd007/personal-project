@@ -141,6 +141,9 @@ div.list{
 }
 
 
+li.list>p,video,select,input,textarea{
+    line-height: 2
+}
 li.list>p:first-child{
     font-weight: bold;
     font-size: 14px;
@@ -148,7 +151,7 @@ li.list>p:first-child{
 
 li.list{
     border-bottom:thin solid #c2c4c5;
-    padding: 0px 0px 30px;
+    padding: 10px 0px 30px;
 }
 
 
@@ -177,4 +180,9 @@ table{
 .result{
 
 }
+
+img{
+
+}
+
 
