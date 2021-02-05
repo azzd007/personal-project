@@ -142,7 +142,7 @@ div.list{
 
 
 li.list>p,video,select,input,textarea{
-    line-height: 2
+    line-height: 2;
 }
 li.list>p:first-child{
     font-weight: bold;
@@ -184,5 +184,4 @@ table{
 img{
 
 }
-
 
