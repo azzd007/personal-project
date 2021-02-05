@@ -3,12 +3,12 @@
 // 查找类名	getElementsByClassName
 // 查找所有元素	querySelectorAll()
 // 写
-document.write(Date());
-// 输出内容	.innerHTML
-// 改变id为p1的元素的内容
-document.getElementById("p1").innerHTML = "Hello Kitty！";
-// 更改元素id为myImage的src属性的值
-document.getElementById("myImage").src = "landscape.jpg";
+// document.write(Date());
+// // 输出内容	.innerHTML
+// // 改变id为p1的元素的内容
+// document.getElementById("p1").innerHTML = "Hello Kitty！";
+// // 更改元素id为myImage的src属性的值
+// document.getElementById("myImage").src = "landscape.jpg";
 $(function () {
 
 	//客户端初始化调用（V4.0新增）
