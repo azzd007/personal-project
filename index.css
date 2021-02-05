@@ -138,6 +138,8 @@ div.list{
     font-size: 14px;
     padding: 12px 16px 30px 12px;
     margin: 0px 0px 0px 12px;
+    word-wrap: break-word;
+	word-break: normal;
 }
 
 
@@ -159,6 +161,8 @@ input.code{
     border-bottom:medium none #176ea5;
     background:none;
     padding: 0px 0px 0px 4px;
+    box-shadow: 5px 5px 10px #ccc9c9 inset;
+    border-radius:7px;
 }
 
 
@@ -183,5 +187,16 @@ table{
 
 img{
 
+}
+
+input[type=text],
+input[type=number],
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 5px;
+    border: 1px solid #8EA8C7;
+    box-shadow: -5px -5px 10px #dfdfdf inset;
+    border-radius: 7px;
 }
 
