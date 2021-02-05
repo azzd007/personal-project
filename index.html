@@ -36,10 +36,10 @@
                         <li class="list">
                             <p class="row">26.native-新手引导</p>
                             <!-- <input class="row code" id="newGuide" type="button" type="button"> -->
-                            <!-- <input class="row code" id="newGuide" type="button" value="按钮"> -->
+                            <input class="row code" id="newGuide" type="button" value="按钮">
                             <p class="result" id="newGuide_success"></p>
                             <!-- <input class="row code" id="newGuide">新手引导</p> -->
-                            <p class="code" id="newGuide">新手引导</p>
+                            <!-- <p class="code" id="newGuide">新手引导</p> -->
                         </li>
                         <li class="list">
                             <p class="row">27.native-给我评分</p>
@@ -1171,6 +1171,13 @@
             </li>
         </ul>
     </div>
+    <!-- 字体自适应 -->
+    <script>
+        var windowWidth=document.documentElement.getBoundingClientRect().width;
+        windowWidth=windowWidth>770?375:windowWidth;
+        var fontSize=windowWidth/7.5;
+        document.documentElement.style.fontSize= fontSize+ 'px';
+    </script>
     <script src="aaa.js"></script>
     <script src="ccc.js"></script>
     <script src="bbb.js"></script>
